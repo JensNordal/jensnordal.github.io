@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:JensNordal/jensnordal.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       }
     },
