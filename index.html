@@ -6,10 +6,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>Jens Nordal | Seattle Based Web Developer Portfolio</title>
+        <meta name="description" content="Seattle based web developer Jens Nordal's portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
@@ -20,8 +30,10 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -36,56 +48,113 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Jens Nordal</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          <ul class="nav navbar-nav navbar-right" id="navbar-right">
+                      <li><a href="#about">ABOUT ME</a></li>
+                      <li><a href="#skills">MY SKILLS</a></li>
+                      <li><a href="#portfolio">PORTFOLIO</a></li>
+                      <li><a href="#contact">CONTACT</a></li>
+                      <!-- TODO: Create modal with contact form <li><a href="#" data-toggle="modal" data-target="#bannerformmodal">CONTACT</a></li> -->
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <!-- Main jumbotron -->
     <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <div class="container-fluid">
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
+    <div class="container-fluid wow fadein" id="about">
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-12">
+          <h1>Here comes the elevator pitch!</h1>
         </div>
       </div>
+    </div>
 
-      <hr>
+    <div class="container-fluid wow fadein" id="about-bd">
+      <div class="row">
+        <div class="col-md-12">
+          <p>I’m Jens, a Seattle-based code addict and budding front-end web developer with a passion for elegant user experience design. I love creating simple, aesthetically pleasing, easy to use
+          websites utilizing the cleanest code possible. I’m looking to apply my current skill set and
+          positive attitude to add value to your web development team, while enthusiastically learning and
+          honing my craft.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="container wow fadein" id="skills">
+      <div class="row">
+      <h2>MY SKILLS</h2>
+        <div class="col-md-3">
+          <img src="img/icons/code.png" alt="Image of empty code tag">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
+        <div class="col-md-3">
+          <img src="img/icons/rocket.png" alt="Image of a rocket fast javascript">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+       </div>
+       <div class="col-md-3">
+        <img src="img/icons/terminal.png" alt="Image of terminal window">
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+        <div class="col-md-3">
+        <img src="img/icons/cup.png" alt="Image of a coffee cup">
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+      </div>
+      </div><!-- /container -->
+
+    <div class="container wow fadein" id="portfolio">
+      <div class="row portfolio-row">
+        <div class="col-md-4">
+          <h2>Charging Stations</h2>
+          <a href="http://jensnordal.com/charging-stations/">
+          <img src="img/portfolio/charging-stations.png" class="img-responsive" alt="Screenshot of charging stations app"></a>
+          <p>Find and map electric vehicle charging stations. Accesses the U.S. Department of Energy’s API. Built using AngularJS, Yeoman, Grunt and Bower.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>VideoPhile</h2>
+          <a href="http://jensnordal.com/wats1020-mobile-friendly-layout">
+          <img src="img/portfolio/videophile.png" class="img-responsive" alt="Screenshot of video product company website"></a>
+          <p>Company website for an imaginary video production company. Built using HTML5, CSS, Bootstrap, JavaScript, Jquery, as well as mapping with Leaflet.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>API Superstore</h2>
+          <a href="http://jensnordal.com/wats1010-product-page/">
+          <img src="img/portfolio/api-superstore.png" class="img-responsive" alt="Screenshot of API Superstore company website"></a>
+          <p>An imaginary product page built with HTML5 and CSS. Features Bootstrap carousel and embedded video.</p>
+        </div>
+      </div>
+      <div class="row portfolio-row">
+        <div class="col-md-4">
+          <h2>Monkaa</h2>
+          <a href="http://jensnordal.com/wats1010-embedded-media/">
+          <img src="img/portfolio/monkaa.png" class="img-responsive" alt="Screenshot of Monkaa the monkey website"></a>
+          <p>Website for Monkaa the monkey. Site features embedded HTML5 video and audio. Built using HTML5 and CSS.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Mt. Ranier</h2>
+          <a href="http://jensnordal.com/wats1020-add-a-map/">
+          <img src="img/portfolio/mt-ranier.png" class="img-responsive" alt="Screenshot of Mt. Rainier informational website"></a>
+          <p>Mt. Rainier informational site features implementation of mapping using the Leaflet.js library and dynamic tabs. Uses HTML5, CSS and Bootstrap.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Grace Hopper</h2>
+          <a href="http://jensnordal.com/wats1020-dom-manipulation/">
+          <img src="img/portfolio/grace-hopper.png" class="img-responsive" alt="Screenshot of Grace Murray Hopper informational website"></a>
+          <p>Grace Hopper informational site. Dom manipulation using Jquery. Built with HTML5 and Bootstrap.</p>
+        </div>
+      </div>
+<a href="#0" class="scrollTop-btn scrollTop-is-visible scrollTop-fade-out">Top</a>
       <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Jens Nordal 2016</p>
       </footer>
+      
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -93,6 +162,11 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
