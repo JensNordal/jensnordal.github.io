@@ -23,15 +23,11 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-    body {
-        padding-top: 50px;
-        padding-bottom: 20px;
-    }
-    </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -70,14 +66,14 @@
         </div>
     </section>
     <section>
-    <div class="container-fluid wow fadein" id="about">
+    <div class="container-fluid" id="about">
         <div class="row">
             <div class="col-md-12">
                 <h1>Here comes the elevator pitch!</h1>
             </div>
         </div>
     </div>
-    <div class="container-fluid wow fadein" id="about-bd">
+    <div class="container-fluid wow fadeIn" id="about-bd">
         <div class="row">
             <div class="col-md-12">
                 <p>I’m Jens, a Seattle-based code addict and budding front-end web developer with a passion for elegant user experience design. I love creating simple, aesthetically pleasing, easy to use websites utilizing the cleanest code possible. I’m looking to apply my current skill set and positive attitude to add value to your web development team, while enthusiastically learning and honing my craft.</p>
@@ -86,25 +82,25 @@
     </div>
     </section>
     <section>
-        <div class="container wow fadein" id="skills">
-            <div class="row">
+        <div class="container-fluid" id="skills">
+            <div class="row wow fadeIn">
                 <h2>MY SKILLS</h2>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeIn animated">
                     <img src="img/icons/code.png" alt="Image of empty code tag">
                     <h3>HTML5 and CSS</h3>
                     <p>Sass and Less</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeIn animated">
                     <img src="img/icons/rocket.png" alt="Image of a rocket fast javascript">
                     <h3>JavaScript</h3>
                     <p>Jquery and Angular</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeIn animated">
                     <img src="img/icons/terminal.png" alt="Image of terminal window">
                     <h3>Command Line</h3>
                     <p>Yeoman, Grunt, Bower</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fadeIn animated">
                     <img src="img/icons/cup.png" alt="Image of a coffee cup">
                     <h3>Master Coffee Drinker</h3>
                     <p>Lattes, Mochas, Drip</p>
@@ -114,8 +110,8 @@
         <!-- /container -->
     </section>
     <section>
-        <div class="container wow fadein" id="portfolio">
-            <div class="row portfolio">
+        <div class="container" id="portfolio">
+            <div class="row wow fadeIn">
                 <div class="col-md-4">
                     <h2>Charging Stations</h2>
                     <a href="http://jensnordal.com/charging-stations/">
@@ -138,7 +134,7 @@
                     <p>An imaginary product page built with HTML5 and CSS. Features Bootstrap carousel and embedded video.</p>
                 </div>
             </div>
-            <div class="row portfolio">
+            <div class="row wow fadeIn">
                 <div class="col-md-4">
                     <h2>Monkaa</h2>
                     <a href="http://jensnordal.com/wats1010-embedded-media/">
@@ -179,9 +175,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b, o, i, l, e, r) {
