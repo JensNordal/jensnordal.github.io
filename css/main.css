@@ -22,9 +22,83 @@ html {
 /*--- End Body Style ---*/
 
 
-.nav {
-	
+
+/*--- Begin Navbar Styling ---*/
+#custom-nav {
+    box-shadow: 0 15px 50px -6px #999;
 }
+
+.navbar {
+    height: auto;
+}
+.onScroll {
+    background: white;
+    border: none;
+}
+.navbar-brand img {
+    margin-left: 0;
+    border-radius: 0;
+}
+
+/* Effect 1: Brackets */
+.navbar-right a::before,
+.navbar-right a::after {
+    display: inline-block;
+    color: #55acee;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar-right a::before {
+    margin-right: 10px;
+    content: '{';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.navbar-right a::after {
+    margin-left: 10px;
+    content: '}';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.navbar-right a:hover::before,
+.navbar-right a:hover::after,
+.navbar-right a:focus::before,
+.navbar-right a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.navbar-collapse {
+    border: none;
+    color: white;
+}
+.navbar-collapse ul li a {
+    color: #ccc;
+}
+.navbar-toggle {
+    color: white;
+}
+.navbar-toggle, .navbar-header, .collapsed, .btn-navbar, .navbar-collapse, #bs-navbar-collapse, .nav, .navbar-nav, .navbar-right, #navbar-right, #navbar, .navbar, .navbar-default, .navbar-fixed-top, .navbar-custom, .header, .navbar-inner {
+    border: none;
+    box-shadow: none;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #55acee;
+}
+.navbar-inverse .navbar-nav li a:hover {
+    color: #55acee;
+}
+
+/*--- End Navbar Styling ---*/
+
 
 img {
 	display: block;

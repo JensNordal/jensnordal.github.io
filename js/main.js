@@ -10,7 +10,7 @@ $(document).on('ready', function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 5) {
+            if (scroll >= 700) {
                 header.removeClass('navbar').addClass("onScroll");
             } else {
                 header.removeClass("onScroll").addClass('navbar');
