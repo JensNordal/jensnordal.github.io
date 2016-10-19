@@ -19,7 +19,7 @@ $(document).on('ready', function () {
     });
 
     // Validate contact form input data
-    $('#contact-form').validate({
+   /* $('#contact-form').validate({
         submitHandler: function (form) {
             form.submit();
         },
@@ -47,7 +47,7 @@ $(document).on('ready', function () {
                 required: true,
                 maxlength: 1,
                 digits: true,
-                range: [007, 007]
+                range: ['007', '007']
             }
         },
 
@@ -59,7 +59,7 @@ $(document).on('ready', function () {
             "your_message": "500 character max.",
             "InputReal": "This field is required. Please answer spam checker question: What is 4+3?"
         }
-    });
+    }); */
 
     // Scroll to top script
     // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -87,7 +87,7 @@ $(document).on('ready', function () {
         }, scroll_top_duration);
     });
 
-    // Script to display and hide .details (client list) text
+    // Script to display and hide .details (portfolio website) text
     $('.view-details').on('click', function (event) {
         console.log(event);
         var targetElement = event.target;
